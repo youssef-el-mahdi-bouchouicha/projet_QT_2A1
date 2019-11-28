@@ -1,0 +1,83 @@
+#include "ajout.h"
+#include "ui_ajout.h"
+#include "QMessageBox"
+#include "client.h"
+#include "affichage.h"
+#include "ui_affichage.h"
+#include <QSystemTrayIcon>
+#include "mailing/SmtpMime"
+
+Ajout::Ajout(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::Ajout)
+{
+    ui->setupUi(this);
+    mysysteme=new QSystemTrayIcon(this);
+    mysysteme->setIcon(QIcon(":/icon.png"));
+    mysysteme->setVisible(true);
+}
+
+Ajout::~Ajout()
+{
+    delete ui;
+}
+
+void Ajout::on_pushButton_clicked()
+{
+
+ // ///////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////
+    int id = ui->lineEdit_id->text().toInt();
+    QString nom= ui->lineEdit_nom->text();
+    QString prenom= ui->lineEdit_prenom->text();
+    QString mail=ui->lineEdit_mail->text();
+    QString adresse=ui->lineEdit_adresse->text();
+    QString date=ui->dateEdit->text();
+    int tel=ui->lineEdit_tel->text().toInt();
+    int age=ui->lineEdit_age->text().toInt();
+  client c(id,nom,prenom,tel,mail,adresse,date,age);
+  bool test=c.ajouter();
+  if(test)
+{
+
+mysysteme->showMessage(tr("notification"),tr("ajout avec succes"));
+QMessageBox::information(nullptr, QObject::tr("Ajouter un client"),
+                  QObject::tr("client ajouté.\n"
+                              "Click Cancel to exit."), QMessageBox::Cancel);
+SmtpClient smtp("smtp.gmail.com", 465, SmtpClient::SslConnection);
+
+smtp.setUser("yassine.kochat@esprit.tn");
+smtp.setPassword("yassine123");
+
+
+MimeMessage message;
+
+message.setSender(new EmailAddress("yassine.kochat@esprit.tn", "KOCHAT YASSINE"));
+message.addRecipient(new EmailAddress("melek.abid@esprit.tn", "Yassine"));
+message.setSubject("SmtpClient for Qt - Demo");
+
+MimeText text;
+
+text.setText("Hi,\n SAHBY KOCHAT WAHDOU SEC.\n");
+
+message.addPart(&text);
+
+smtp.connectToHost();
+smtp.login();
+smtp.sendMail(message);
+smtp.quit();
+
+}
+  else
+      QMessageBox::critical(nullptr, QObject::tr("Ajouter un client"),
+                  QObject::tr("Erreur !.\n"
+                              "Click Cancel to exit."), QMessageBox::Cancel);
+
+
+}
+
+
