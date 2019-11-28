@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tab_general">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Midlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>170</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="PlaceholderText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="128">
+          <red>170</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Midlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>170</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="PlaceholderText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="128">
+          <red>170</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Midlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="PlaceholderText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="128">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_acceuil">
+     <attribute name="title">
+      <string>Acceuil</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_annonces">
+     <attribute name="title">
+      <string>Annonces</string>
+     </attribute>
+     <widget class="QTabWidget" name="tab_type">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>-2</x>
+        <y>-1</y>
+        <width>800</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="PlaceholderText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="128">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::TabFocus</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>true</bool>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_voyage">
+       <attribute name="title">
+        <string>Voyages</string>
+       </attribute>
+       <widget class="QTabWidget" name="tab_CRUD">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>800</width>
+          <height>460</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_ajouter">
+         <attribute name="title">
+          <string>Ajouter</string>
+         </attribute>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>40</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ID_Voyage :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>70</y>
+            <width>51</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Type :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>110</y>
+            <width>101</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Destination :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>140</y>
+            <width>81</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Date_dep :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>170</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Date_retour :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>200</y>
+            <width>81</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ID_Bus</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>230</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Description :</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_id_voyage">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>40</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="placeholderText">
+           <string>taper id voyage</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_dest">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>110</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="placeholderText">
+           <string>taper destination</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_id_bus">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>200</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="placeholderText">
+           <string>taper id BUS</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ajouter_but">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>280</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ajouter</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="mod_voy_but">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>280</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Modifier</string>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="date_dep_voy">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>140</y>
+            <width>110</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="date_retour_voy">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>170</y>
+            <width>110</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="combo_descri_voy">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>230</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>*</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* *</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* * *</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* * * * </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* * * * *</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+         </widget>
+         <widget class="QComboBox" name="combo_type_voyage">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>70</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Croisiere</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sejour</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Colonie</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Excursion</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_afficher">
+         <attribute name="title">
+          <string>Afficher</string>
+         </attribute>
+         <widget class="QTableView" name="tableVoyage">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>70</y>
+            <width>491</width>
+            <height>271</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="trier_voy_but">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>109</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Trier</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_supp_chercher_voy">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>49</y>
+            <width>113</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="placeholderText">
+           <string>taper ID Voyage ...</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="chercher_voy">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>79</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Chercher</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="supprimer">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>49</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Supprimer</string>
+          </property>
+         </widget>
+         <zorder>trier_voy_but</zorder>
+         <zorder>line_supp_chercher_voy</zorder>
+         <zorder>chercher_voy</zorder>
+         <zorder>tableVoyage</zorder>
+         <zorder>supprimer</zorder>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_offres">
+       <attribute name="title">
+        <string>Offres</string>
+       </attribute>
+       <widget class="QTabWidget" name="tab_offre">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>800</width>
+          <height>470</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_ajouter_offre">
+         <attribute name="title">
+          <string>Ajouter</string>
+         </attribute>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>80</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>PERIODE :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>170</y>
+            <width>131</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>DATE_RETOUR :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>140</y>
+            <width>151</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>DATE_DÉPART :</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_id_offre">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>50</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="placeholderText">
+           <string>taper ID Offre</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>50</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ID_OFFRE :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>110</y>
+            <width>141</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>TYPE_VOYAGEURS :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>200</y>
+            <width>151</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>DESCRIPTION :</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ajouter_offre">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>260</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ajouter</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="combo_type_voy_offre">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>110</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Famille</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Couple</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>jeune</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QComboBox" name="combo_periode">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>80</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>NOEL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CHRISTMAS</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>OMRA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HAAJ</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QDateEdit" name="date_dep_offre">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>140</y>
+            <width>110</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="date_retour_offre">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>170</y>
+            <width>110</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="combo_desc_offre">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>200</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>*</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* *</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* * *</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_afiicher_offre">
+         <attribute name="title">
+          <string>Afficher</string>
+         </attribute>
+         <widget class="QTableView" name="tableoffres">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>60</y>
+            <width>491</width>
+            <height>261</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="trier_offre_but">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>100</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Trier</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="chercher_offre_but">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>70</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Chercher</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_supp_chercher_offre">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>40</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="placeholderText">
+           <string>taper ID Offre ...</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="offre_supprimer_but">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>40</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Supprimer</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_events">
+       <attribute name="title">
+        <string>Events</string>
+       </attribute>
+       <widget class="QTabWidget" name="tab_event">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-1</y>
+          <width>800</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_ajouter_event">
+         <attribute name="title">
+          <string>Ajouter</string>
+         </attribute>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>50</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>ID_event :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>90</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Nbre jours :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>130</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Type Voyageurs :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>170</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Prix :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>210</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Description :</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_id_event">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>50</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="placeholderText">
+           <string>ID event</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ajouter_event_but">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>260</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>confirmer</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="combo_type_voy_event">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>130</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Famille</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>couple</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>groupe jeune</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_event">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>90</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="double_spin_event">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>170</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Comic Sans MS</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="combo_desc_event">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>210</y>
+            <width>111</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>*</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* *</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>* * * </string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_afficher_event">
+         <attribute name="title">
+          <string>Afficher</string>
+         </attribute>
+         <widget class="QTableView" name="tableevents">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>60</y>
+            <width>511</width>
+            <height>291</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="trier_event_but">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>100</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Trier</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="chercher_event_but">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>70</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Chercher</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="line_supp_chercher_event">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>40</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="placeholderText">
+           <string>taper ID ...</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="supprimer_event_but">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>40</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Supprimer</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="stat_event_but">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>130</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Statistiques</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_reservations">
+     <attribute name="title">
+      <string>Réservations</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_clients">
+     <attribute name="title">
+      <string>Clients</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_transport">
+     <attribute name="title">
+      <string>Transports</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_personnels">
+     <attribute name="title">
+      <string>Personnels</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_contacts">
+     <attribute name="title">
+      <string>Contacts</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
