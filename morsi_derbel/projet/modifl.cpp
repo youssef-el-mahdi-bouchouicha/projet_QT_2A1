@@ -1,0 +1,45 @@
+#include "modifl.h"
+#include "ui_modifl.h"
+#include"reslog.h"
+#include<QMessageBox>
+#include<QDebug>
+#include<QtWidgets>
+#include<QSystemTrayIcon>
+
+modifl::modifl(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::modifl)
+{
+    ui->setupUi(this);
+}
+
+modifl::~modifl()
+{
+    delete ui;
+}
+
+void modifl::on_pushButton_3_clicked()
+{
+    int idr = ui->idr->text().toInt();
+    int idc =ui->idc->text().toInt();
+    int nbr = ui->nbr->text().toInt();
+    QString dat = ui->dat->text();
+    int idco=ui->idco->text().toInt();
+    QString etp= ui->etp->currentText();
+    int res=ui->res->text().toInt();
+
+  reslog e(idr,idc,nbr,dat,idco,etp,res);
+  bool test=e.modifier();
+  if(test)
+{
+    //  mysystem->showMessage(tr("notification"),tr("ajout avec success"));
+QMessageBox::information(nullptr, QObject::tr("Ajouter une reservation"),
+                  QObject::tr("reservation ajouté.\n"
+                              "Click Cancel to exit."), QMessageBox::Cancel);
+
+}
+  else
+      QMessageBox::critical(nullptr, QObject::tr("Ajouter une reservation "),
+                  QObject::tr("Erreur !.\n"
+                              "Click Cancel to exit."), QMessageBox::Cancel);
+}
